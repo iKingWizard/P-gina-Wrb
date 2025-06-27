@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+
+<script>
+    function cambColores(fondos, letras) {
+        let ind;
+        ind = fondos.selectedIndex;
+        document.body.style.backgroundColor = fondos.options[ind].value;
+        ind = letras.selectedIndex;
+        document.body.style.color = letras.options[ind].value;
+        return;
+    }
+</script>
+
+<style>
+
+    body {
+        font-family: 'Times New Roman', Times, serif;
+        margin: 14px;
+    }
+
+    h1 {
+        color: #333;
+    }
+
+    h2 { color: #000000}
+
+    p {
+        font-size: 14px;
+    }
+</style>
+
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Mis Proyectos</title>
+</head>
+
+<body>
+    <h2>Esta es una muestra de personalización de colores</h2>
+
+
+    <form name="form1" method="post" action="">
+        Fondo:
+
+
+        <select name="fondo">
+
+
+            <option value="yellow">Amarillo</option>
+
+
+            <option value="white">Blanco</option>
+
+
+            <option value="purple">Púrpura</option>
+
+
+        </select>
+
+
+
+        Texto:  <select name="texto">
+
+
+            <option value="yellow">Amarillo</option>
+
+
+            <option value="white">Blanco</option>
+
+
+            <option value="purple">Púrpura</option>
+
+
+        </select>
+
+
+        <input type="button" name="Button" value="cambiar"
+               onclick="cambColores(parentElement.fondo,parentElement.texto)">
+
+
+    </form>
+
+    <h1>Mis Proyectos</h1>
+
+    <p><strong>Nombre:</strong> Facundo Cañete</p>
+
+    <p><strong>Descripción:</strong> Soy un proximo licenciado en Producción y Desarrollo de Videojuegos. Tengo 21 años y soy argentino, actualmente vivo en Moreno, Buenos Aires. Los videojuegos que me dieron el pie a querer estudiar esto fueron: Bioshock, The Binding of Isaac y Persona 5. Tambien soy un loquito de los juegos de mesa, en especial los de cartas, y mi hobbie número 1 es el basketball.</p>
+
+
+
+    <h2>Proyecto 1: El Gato y el Mago</h2>
+
+    <p><strong>Descripción:</strong> Este es mi proyecto de Scratch, un juego que hice como parte del curso de Fundamentos de la Programación I. Podés descargarlo y jugarlo acá: </p>
+
+    <a href="https://drive.google.com/drive/folders/1Q06V-1pOW1U-lzRB9cGuyH8tNR18THM5?usp=sharing">Proyecto Scratch</a>
+
+    <p><strong>Gameplay:</strong></p>
+
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/q3FgjIfzjYg?si=72tz5JmN8gAbb34L" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+    <p><strong>Informe:</strong> Acá describo cómo hice el proyecto de Scratch. Pueden descargar el informe completo desde acá: <a href="https://drive.google.com/drive/folders/1Q06V-1pOW1U-lzRB9cGuyH8tNR18THM5?usp=sharing">Informe Completo</a></p>
+
+
+
+    <h2>Proyecto 2: In the Mouth of Grudge</h2>
+
+    <p><strong>Descripción:</strong> Este es mi proyecto de RPG Maker. Es un juego de rol que creé en la materia de Fundamentos de la Programación I. Podés descargarlo y jugarlo acá.</p>
+
+    <a href="https://drive.google.com/drive/folders/1Es2EQHaQnc2Z935Cy1UhMyXBUdOwFHCt?usp=sharing">Descargar RPG Maker</a>
+
+    <p><strong>Gameplay:</strong></p>
+
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/ARA24CYixD4?si=N3l4yg0IJvsuFbvw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+    <p><strong>Informe:</strong> Acá describo cómo hice el proyecto de RPG MAKER XP. Pueden descargar el informe completo desde acá: <a href="https://drive.google.com/drive/folders/1Es2EQHaQnc2Z935Cy1UhMyXBUdOwFHCt?usp=sharing">Informe Completo</a></p>
+
+
+
+    <h2>Proyecto 3: Gods Deck</h2>
+
+    <p><strong>Descripción:</strong> Este es mi proyecto de Unity, el cuál consiste en un videojuego en 3D. Podés descargarlo y jugarlo acá: </p>
+
+    <a href="https://drive.google.com/drive/folders/1mUY6_ftrbv4icWUAwSaFMqKx6g1bVB7S?usp=sharing">Descargar Unity</a>
+
+    <p><strong>Gameplay:</strong></p>
+
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/aDbmRMHH3Ko?si=QVYDcyPU55_GnpyM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+    <p><strong>Informe:</strong> Acá describo cómo hice el proyecto de Unity y muestro algunos fragmentos de código relevante. Pueden descargar el informe completo desde acá: <a href="https://drive.google.com/drive/folders/1mUY6_ftrbv4icWUAwSaFMqKx6g1bVB7S?usp=sharing">Informe Completo</a></p>
+</body>
+</html>
